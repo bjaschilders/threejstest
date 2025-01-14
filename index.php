@@ -71,7 +71,7 @@
       cubes.push(cube);
       velocities.push(new THREE.Vector3(0, 0, 0)); // Add velocity vector
       cubeCount++;
-      document.getElementById('cubeCounter').textContent = `Blokken: ${cubeCount}`;
+      document.getElementById('cubeCounter').textContent = `Cubes: ${cubeCount}`;
     }
 
     // Function to add spheres
@@ -82,7 +82,7 @@
       spheres.push(sphere);
       velocities.push(new THREE.Vector3(0, 0, 0)); // Add velocity vector
       sphereCount++;
-      document.getElementById('sphereCounter').textContent = `Bollen: ${sphereCount}`;
+      document.getElementById('sphereCounter').textContent = `Spheres: ${sphereCount}`;
     }
 
     // Function to remove a random cube
@@ -93,7 +93,7 @@
         cubes.splice(index, 1);
         velocities.splice(index, 1); // Remove velocity vector
         cubeCount--;
-        document.getElementById('cubeCounter').textContent = `Blokken: ${cubeCount}`;
+        document.getElementById('cubeCounter').textContent = `Cubes: ${cubeCount}`;
       }
     }
 
@@ -105,7 +105,7 @@
         spheres.splice(index, 1);
         velocities.splice(index + cubes.length, 1); // Remove velocity vector
         sphereCount--;
-        document.getElementById('sphereCounter').textContent = `Bollen: ${sphereCount}`;
+        document.getElementById('sphereCounter').textContent = `Spheres: ${sphereCount}`;
       }
     }
 
